@@ -9,5 +9,3 @@ GAN은 adversarial 구조로 image를 Generator와 이를 평가하는 Discrimin
 이 둘의 관계는 서로 대립적인 구조로 성능을 점차 개선하는 방법론이다.
 
 
-
-![](./img/adversarial.png )
