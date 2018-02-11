@@ -38,3 +38,4 @@ Generative model(G)는 실제 샘플X의 Distribution을 알아내려고 노력�
 ### 최적일 때와  JS DIVERGENCE로 바꿔서 표현하기
 ![](img/수식3.PNG)
 
+
