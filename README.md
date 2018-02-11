@@ -28,3 +28,13 @@ Generative model(G)는 실제 샘플X의 Distribution을 알아내려고 노력�
 하지만 논문에서는 다른 방법으로 G를 설정하는데, 학습이 초기에 진행 될 때 G(z)는 형편없는 이미지를 만들기 때문에 D는 구별을 아주  잘하게 됩니다.
 그래서 BACKPROPAGATION을 할 때   log(1-D(G(z))의 Gradient는 아주 작은 값을 가지게 됩니다. 그래서 학습이 느려지게 되는데,
 이 부분을 해결하기 위해 log(1-D(G(z))를 minimize하는것보다는 log(D(G(z))를 MAXIMIZE 하는 걸로 바꿔주게 되면 초기에도 강한 Gradient를  줄 수 있습니다.   
+
+## 수식증명
+![](img/수식1.PNG)
+
+### OPTIMAL D 찾기
+![](img/수식2.PNG)
+
+### 최적일 때와  JS DIVERGENCE로 바꿔서 표현하기
+![](img/수식3.PNG)
+
