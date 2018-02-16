@@ -1,4 +1,5 @@
 # GAN
+
 GAN generative model 중에서 implicit density에 속하는 방법
 
 <img src="./img/GAN_TAXONOMY.png" width="500" height="300">
