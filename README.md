@@ -1,5 +1,6 @@
 # GAN
 
+## TAXONOMY
 GAN generative model 중에서 implicit density에 속하는 방법
 
 <img src="./img/GAN_TAXONOMY.png" width="500" height="300">
@@ -32,7 +33,7 @@ GAN은 여러 모델들의  단점을 보완하기 위해 만들어졌다. 본�
 
 High-dimensional한 space에서는 Markov chain이 덜 효과적 (GAN은 Markov chain을 사용하지 않는다)
 
-##2 Implicit density models
+## 2 Implicit density models
 
 Density function이 명시적으로 정의되지 않고도 학습될 수 있도록 디자인
 
