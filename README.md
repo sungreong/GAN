@@ -4,9 +4,41 @@ GAN generative model 중에서 implicit density에 속하는 방법
 
 <img src="./img/GAN_TAXONOMY.png" width="500" height="300">
 
+GAN은 여러 모델들의  단점을 보완하기 위해 만들어졌다. 본인만의 단점도 있다.
+## 1.Explicit density models
+명시적으로 분포를 가정하기 때문에 ML이 간단하고 복잡하지않다.
+모델을 이용해 likelihood 정의 후 gradient 최적화하면 된다.
+하지만 복잡한 데이터에서 계산가능하기 다루기쉬운 모델로 정의하기는 어렵다. 그래서
+
+1.1 tractability를 유지하면서 정의하는법 
+1.2 tractable approximation이 가능한 모델을 정의하는법
+
+1.1 fully visible belief network (FVBN)
+단점 : 계산 STEP들이  Parallel 하지않아 . (GAN은 parallel해서 속도가 더 빠르다)
+
+1.2.1 VAE
+단점 : WEAK Prior distribtuion 이라서 likelihood 사이에 차이는 항상 존재하기 때문에 model과 data 는 달라질수  있다.
+(GAN은 Unbiased  하므로 NASH균형을(D와G) 이룬  GAN은 data를 정확히 재현할 수 있다.
+
+1.2.2 Markov chain approximation
+단점 : convergence는 매우 느릴 수 있고, converge 했다는 완벽한 보장을 할 수도 없다. 
+      High-dimensional한 space에서는 Markov chain이 덜 효과적 (GAN은 Markov chain을 사용하지 않는다)
+
+##2 Implicit density models
+Density function이 명시적으로 정의되지 않고도 학습될 수 있도록 디자인
+2.1 GSN(generative stochastic network)
+단점 : Markov chain은 high dimensional space의 데이터에서 사용이 어렵고 computational cost가 크다
+
+2.2 GAN - 앞에 나온 모델들의 단점을 보완을  할 수 있다.
+단점 : NASH균형 (G와 D 사이)이 필요한데, 이것은 objective function을 최적화하는 문제보다 더 어려운 문제
+
 GAN은 adversarial 구조로 image를 생성시키는 Generator와 이를 평가하는 Discriminator로 이루어지고 
 
 이 둘의 관계는 서로 대립적인 구조로 성능을 점차 개선하는 방법이다.
+
+## gan의 장점  
+1. High Dimensonal prob distribution을 추출 가능
+2. semi-supervised learning에 활용 가능
 
 ![](img/adversarial2.PNG)
 
