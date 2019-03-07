@@ -1,4 +1,6 @@
 
+  ![equation](http://latex.codecogs.com/gif.latex?%5Cpsi%28x%29%20%3D%20%5Cbegin%7Bcases%7D%20x%5E2%20%26%20%5Ctext%7Bif%7D%7E%7Cx%7C%5Cleq%201%5C%5C%202%7Cx%7C-1%20%26%5Cmathrm%7Bif%7D%7E%20%7Cx%7C%20%3E%201%5Cend%7Bcases%7D)
+
 The relativistic discriminator: a key element missing from standard GAN
 
 https://arxiv.org/abs/1807.00734
