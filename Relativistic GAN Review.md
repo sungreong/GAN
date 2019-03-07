@@ -66,3 +66,6 @@ Gradient Penalty
 - 실험 중에 다음과 같은 예제가 있다.
   - $$C(x_r) - C(x_f) = 13$$
   - $$sigmoid(13) =  1 = P( x_r \quad is \quad bread | C(x_f)$$
+
+
+수식 오류 뜨는 것은 그래도 복사해서 DropBox Paper에서 붙여넣기 하면 보입니다...  고칠게요.
